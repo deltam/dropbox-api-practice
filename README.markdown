@@ -11,7 +11,7 @@ Dependes `clj-oauth` version 1.2.10.
 
 1. Create "My Apps" on [Dropbox for Developers page](https://www.dropbox.com/developers/apps).
 
-2. Get API Keys(`developer-token` and `developer-secret`).
+2. Get API Keys (`developer-token` and `developer-secret`).
 
 3. `lein deps`, `lein repl`
 
