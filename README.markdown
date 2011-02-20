@@ -21,11 +21,15 @@ Dependes `clj-oauth` version 1.2.10.
 
 * Getting Dropbox account info.
 
-code :
+on repl :
 
     (use 'dropbox-api-practice.core)
+    
+    ;; get access token
     (def my-consumer (new-consumer "developer-token" "developer-secret"))
     (def my-access-token (get-access-token my-consumer "user mailaddress" "password"))
+
+    ;; API call
     (get-account-info my-consumer my-access-token)
 
 
@@ -53,6 +57,6 @@ Edit test file, after run same code, check to update metadata.
 
 ## License
 
-Copyright (c) 2010 MISUMI Masaru(deltam@gmail.com).
+Copyright (c) 2011 MISUMI Masaru(deltam@gmail.com).
 
 Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
