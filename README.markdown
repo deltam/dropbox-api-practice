@@ -21,8 +21,10 @@ Dependes `clj-oauth` version 1.2.10.
 * Getting Dropbox account info.
 
     (use 'dropbox-api-practice.core)
+    
     (def my-consumer (new-consumer "developer-token" "developer-secret"))
     (def my-access-token (get-access-token my-consumer "user mailaddress" "password"))
+
     (get-account-info my-consumer my-access-token)
 
 
