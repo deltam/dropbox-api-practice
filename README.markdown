@@ -21,36 +21,38 @@ Dependes `clj-oauth` version 1.2.10.
 
 * Getting Dropbox account info.
 
-     (use 'dropbox-api-practice.core)
-     (def my-consumer (new-consumer "developer-token" "developer-secret"))
-     (def my-access-token (get-access-token my-consumer "user mailaddress" "password"))     
-     (get-account-info my-consumer my-access-token)
+code :
+
+    (use 'dropbox-api-practice.core)
+    (def my-consumer (new-consumer "developer-token" "developer-secret"))
+    (def my-access-token (get-access-token my-consumer "user mailaddress" "password"))
+    (get-account-info my-consumer my-access-token)
 
 
 * Getting file metadata.
 
 Before run this code,  make test file `~/Dropbox/api_test/test.txt`.
 
-     (get-metadata my-consumer myaccess-token "/api_test/test.txt")
+    (get-metadata my-consumer myaccess-token "/api_test/test.txt")
 
 Edit test file, after run same code, check to update metadata.
 
 
 ## References
 
-http://d.hatena.ne.jp/teru_kusu/20110120/1295520678
+<http://d.hatena.ne.jp/teru_kusu/20110120/1295520678>
 
-https://www.dropbox.com/developers/docs
+<https://www.dropbox.com/developers/docs>
 
-https://github.com/mattrepl/clj-oauth
+<https://github.com/mattrepl/clj-oauth>
 
-http://tzmtk.pbworks.com/w/page/7618696/OAuthCore10aJP
+<http://tzmtk.pbworks.com/w/page/7618696/OAuthCore10aJP>
 
-https://github.com/aria42/clj-dropbox
+<https://github.com/aria42/clj-dropbox>
 
 
 ## License
 
-Copyright (c) 2010 deltam (MISUMI Masaru).
+Copyright (c) 2010 MISUMI Masaru(deltam@gmail.com).
 
 Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
